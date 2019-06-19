@@ -1,0 +1,63 @@
+/* @import url(https://fonts.googleapis.com/css?family=Oswald); */
+* {
+Box-sizing: Border-box;
+padding: 0;
+margin: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#code-wrapper{
+  flex: 1;
+  height: 40%;
+  padding: 10px;
+}
+#preview-wrapper{
+  flex: 1;
+  height: 60%;
+}
+#code{
+  height:100%;
+  overflow: hidden;
+}
+#button{
+  display: flex;
+  position: absolute;
+  right:8px;
+  top:16px;flex-direction: column;
+  margin:8px;
+ }
+
+#button>button{
+ width: 48px;
+ height:48px;
+ margin:8px;
+ box-shadow: rgba(1px,1px,1px,0.2);
+ border-radius: 50%;
+ background: #bbb;
+ border: none;
+ padding: 8px 10px;
+}
+#button>button.active{
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.8);
+}
+#button>button:focus{
+  outline: none;
+}
+ .token.selector{
+  color: black;
+}
+.token.property{
+  color: black;
+}
+.token.punctuation{
+  color: black;
+} 
+.token.function{
+  color: black;
+}
+.token.comment{
+  color: black;
+}
